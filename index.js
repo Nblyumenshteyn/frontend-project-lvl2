@@ -2,8 +2,10 @@ import { readFileSync } from 'fs';
 import path from 'path/posix';
 
 export default function genDiff(filepath1, filepath2) {
-  const file1 = JSON.parse(readFileSync(path.resolve(process.cwd(), filepath1)), 'utf-8');
-  const file2 = JSON.parse(readFileSync(path.resolve(process.cwd(), filepath2)), 'utf-8');
+  const absoluteFilePath1 = path.resolve(process.cwd(), filepath1);
+  const absoluteFilePath2 = path.resolve(process.cwd(), filepath2);
+  const file1 = JSON.parse(readFileSync(absoluteFilePath1, 'utf-8'));
+  const file2 = JSON.parse(readFileSync(absoluteFilePath2, 'utf-8'));
 
   const arr1 = Object.keys(file1);
   const arr2 = Object.keys(file2);
