@@ -13,6 +13,9 @@ env:
 
 extends:
   - airbnb-base
+  - "plugin:import/errors",
+  - "plugin:import/warnings",
+  -  "plugin:import/typescript",
   # - plugin:react/recommended
 
 parserOptions:
@@ -30,3 +33,5 @@ rules:
     - ignorePackages
     - js: always
   no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]
+
+
