@@ -1,6 +1,5 @@
-import path from 'path/posix';
+import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { dirname } from 'path';
 import genDiff from '../index.js';
 
 const __filename = fileURLToPath(import.meta.url);
