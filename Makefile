@@ -4,7 +4,7 @@ lint:
 	npx eslint --fix .
 test:
 	npx jest
-coverage:
+test-coverage:
 	npm test -- --coverage --coverageProvider=v8
 gendiff -h:
 
