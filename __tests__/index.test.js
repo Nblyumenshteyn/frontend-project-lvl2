@@ -1,4 +1,5 @@
-import path, { dirname } from 'path';
+import * as path from 'path';
+import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import genDiff from '../index.js';
 
