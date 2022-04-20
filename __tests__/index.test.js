@@ -5,7 +5,7 @@ import genDiff from '../index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const file1 = 'file1.json';
+const file1 = 'file1.yaml';
 const file2 = 'file2.json';
 const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
 const answer = genDiff(getFixturePath(file1), getFixturePath(file2));
