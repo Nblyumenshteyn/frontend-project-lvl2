@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Nblyumenshteyn/frontend-project-lvl2#readme",
   "dependencies": {
+    "@babel/types": "^7.18.13",
     "commander": "^9.2.0",
     "eslint-plugin-jest": "^26.1.4",
     "eslint-plugin-react": "^7.29.4",
