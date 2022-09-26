@@ -7,7 +7,9 @@ const formatter = (tree, format) => {
       return stylish(tree);
     case 'plain':
       return plain(tree);
+    default:
+      return new Error('This format does not exist');
   }
-}
+};
 
 export default formatter;
