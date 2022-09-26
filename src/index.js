@@ -10,6 +10,7 @@ export default function genDiff(filepath1, filepath2, format = 'stylish') {
   const readFile2 = readFileSync(absoluteFilePath2, 'utf-8');
   const file1 = parse(readFile1, path.extname(filepath1));
   const file2 = parse(readFile2, path.extname(filepath2));
+  console.log(buildTree(file1, file2, format));
 
-  return buildTree(file1, file2);
+  return buildTree(file1, file2, format);
 }
